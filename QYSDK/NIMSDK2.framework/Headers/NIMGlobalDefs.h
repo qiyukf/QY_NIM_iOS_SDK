@@ -10,6 +10,9 @@
 #define NIMLib_NIMGlobalDefs_h
 
 #import <Foundation/Foundation.h>
+#if __has_include("NIMLib.pch")
+#include "NIMLib.pch"
+#endif
 
 /**
  *  消息内容类型枚举
