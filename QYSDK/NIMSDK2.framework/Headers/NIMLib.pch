@@ -700,5 +700,10 @@
 #define NIMNOSSceneStoreTag RENAME(NIMNOSSceneStoreTag)
 #define NIMNOSSceneSDKCount RENAME(NIMNOSSceneSDKCount)
 #define NIMNOSSceneCustomCount RENAME(NIMNOSSceneCustomCount)
+#define NIMConnectNotification RENAME(NIMConnectNotification)
+#define NIMDisconnectNotification RENAME(NIMDisconnectNotification)
+#define NIMRespCode RENAME(NIMRespCode)
+#define NIMConnectStep RENAME(NIMConnectStep)
+
 
 #endif /* NIMLib_pch */
