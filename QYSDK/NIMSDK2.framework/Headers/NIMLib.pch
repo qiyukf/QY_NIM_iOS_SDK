@@ -705,5 +705,4 @@
 #define NIMRespCode RENAME(NIMRespCode)
 #define NIMConnectStep RENAME(NIMConnectStep)
 
-
 #endif /* NIMLib_pch */
