@@ -94,6 +94,23 @@ typedef NS_ENUM(NSInteger, NIMChatroomEventType){
      *  聊天室通用队列批量变更的通知
      */
     NIMChatroomEventTypeQueueBatchChange = 320,
+    /**
+     * 聊天室新增标签禁言，包括的字段是muteDuration、targetTag、operator、opeNick字段
+     */
+    NIMChatroomEventTypeTagTempMuteAdd = 321,
+    /**
+     * 聊天室移除标签禁言，包括的字段是muteDuration、targetTag、operator、opeNick字段
+     */
+    NIMChatroomEventTypeTagTempMuteRemove = 322,
+    /**
+     * 聊天室消息撤回，包括的字段是operator、target、msgTime、msgId、ext字段
+     */
+    NIMChatroomEventTypeRecall = 323,
+
+    /**
+     * 批量添加聊天室队列元素，包括的字段是ext、opeNick、operator、queueChange字段
+     */
+    NIMChatroomEventTypeQueueBatchAdd = 324,
 };
 
 /**
@@ -120,6 +137,11 @@ typedef NS_ENUM(NSInteger, NIMChatroomQueueChangeType){
      *  更新元素
      */
     NIMChatroomQueueChangeTypeUpdate = 5,
+
+    /**
+     * 批量新增或更新元素
+     */
+    NIMChatroomQueueChangeTypeBatchOffer = 6,
 };
 
 /**
@@ -176,6 +198,16 @@ typedef NS_ENUM(NSInteger, NIMChatroomQueueBatchChangeType){
  *  通知信息
  */
 @property (nullable,nonatomic,copy,readonly) NSString *notifyExt;
+
+/**
+ * 被撤回消息的ID
+ */
+ @property (nullable,nonatomic,copy,readonly) NSString *revokedMessageId;
+
+/**
+ * 被撤回消息的时间
+ */
+@property (nonatomic,readonly) NSTimeInterval revokedMessageTime;
 
 /**
  *  拓展信息

@@ -143,9 +143,17 @@ typedef NS_ENUM(NSInteger, QYMessagesLoadState) {
 
 /**
  *  客服头像
+ *  若avatarUrlString为nil，则显示serviceHeadImage
+ *  若avatarUrlString不为nil，则将serviceHeadImage当做占位图，下载完成后显示头像url指定的图片
  */
 @property (nonatomic, strong) UIImage *serviceHeadImage;
 @property (nonatomic, copy) NSString *serviceHeadImageUrl;
+/**
+ *  客服头像优先级
+ *  YES 管理端配置优先   NO 代码配置优先
+ *  默认：NO
+ */
+@property (nonatomic, assign) BOOL isWebFirst;
 
 /**
  *  客服消息气泡normal图片
@@ -260,10 +268,13 @@ typedef NS_ENUM(NSInteger, QYMessagesLoadState) {
 @property (nonatomic, assign) BOOL showEmoticonEntry;
 
 /**
- *  输入栏相机按钮是否显示，默认为YES
+ *  输入栏机器人阶段相机按钮是否显示，默认为NO
+ */
+@property (nonatomic, assign) BOOL showRobotImageEntry;
+/**
+ *  输入栏人工阶段相机按钮是否显示，默认为YES
  */
 @property (nonatomic, assign) BOOL showImageEntry;
-
 /**
  * 照片/视频选择页面主题颜色，默认为蓝色
  */

@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class NIMSessionDeleteAllRemoteMessagesInfo;
 @class NIMAddEmptyRecentSessionBySessionOption;
 @class NIMMessageFullKeywordSearchOption;
+@class NIMMessageFullKeywordSearchOrderByTimeOption;
 
 /**
  *  读取服务器消息记录block
@@ -612,6 +613,18 @@ typedef NS_ENUM(NSUInteger, NIMClearMessagesStatus)
                                               message:(nullable NIMMessage *)message
                                                 limit:(NSInteger)limit;
 
+/**
+ *  从本地db读取一个会话里某条消息之前的若干条的消息
+ *
+ *  @param session 消息所属的会话
+ *  @param message 当前最早的消息,没有则传入nil
+ *  @param limit   个数限制
+ *  @param completion 完成后的回调
+ */
+- (void)messagesInSession:(NIMSession *)session
+                  message:(nullable NIMMessage *)message
+                    limit:(NSInteger)limit
+               completion:(NIMFetchMessageHistoryBlock)completion;
 
 /**
  *  根据消息Id获取消息
@@ -624,7 +637,6 @@ typedef NS_ENUM(NSUInteger, NIMClearMessagesStatus)
  */
 - (nullable NSArray<NIMMessage *> *)messagesInSession:(NIMSession *)session
                                            messageIds:(NSArray<NSString *> *)messageIds;
-
 
 /**
  *  获取所有未读数
@@ -641,6 +653,10 @@ typedef NS_ENUM(NSUInteger, NIMClearMessagesStatus)
  *  @discussion 群只有 notify state != NIMTeamNotifyStateNone 才算是不允许通知
  */
 - (NSInteger)allUnreadCount:(BOOL)notify;
+
+- (NSArray *)allUnreadMessagesInSession: (NIMSession *)session;
+
+- (void)allUnreadMessagesInSession: (NIMSession *)session completion:(NIMFetchMessageHistoryBlock)completion;
 
 /**
  *  获取所有最近会话。
@@ -753,7 +769,6 @@ typedef NS_ENUM(NSUInteger, NIMClearMessagesStatus)
 /**
  *  根据关键字从服务器上全量检索消息
  *
- *  @param session 消息所属的会话
  *  @param option  检索选项
  *  @param result  读取的消息列表结果
  *  @discussion    检索消息内容，此接口仅支持查询P2P和群聊消息，不支持聊天室和超大群
@@ -761,6 +776,16 @@ typedef NS_ENUM(NSUInteger, NIMClearMessagesStatus)
  */
 - (void)retrieveServerMessages:(NIMMessageFullKeywordSearchOption *)option
                         result:(nullable NIMRetrieveServerMessagesBlock)result;
+
+/**
+ * 云端历史消息全文检索（按时间排序，不按会话分组）
+ *
+ * @param option 检索选项，其中sessionLimit为无效变量
+ * @param result  读取的消息列表结果
+ * @discussion    检索消息内容
+ */
+- (void)retrieveServerMessagesOrderByTime:(NIMMessageFullKeywordSearchOrderByTimeOption *)option
+                                   result:(nullable NIMRetrieveServerMessagesBlock)result;
 
 /**
  *  搜索本地会话内消息
