@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class NIMNotificationObject;
 @class NIMMessage;
-@class NIMChatroomCdnTrackInfo;
-@protocol NIMMsgIndexProduceDelegate;
+//@class NIMChatroomCdnTrackInfo;
+//@protocol NIMMsgIndexProduceDelegate;
 
 /**
  *  SDK 配置委托
@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 聊天室cdn统计回调，回调时间间隔为NIMSDKConfig.cdnTrackInterval
  */
-- (void)onChatroomCdnTrack:(NIMChatroomCdnTrackInfo *)trackInfo forRoom:(NSString *)roomID;
+//- (void)onChatroomCdnTrack:(NIMChatroomCdnTrackInfo *)trackInfo forRoom:(NSString *)roomID;
 
 @end
 
@@ -77,7 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  是否在收到聊天室消息后自动下载附件
  *  @discussion 默认为NO
  */
-@property (nonatomic,assign)    BOOL    fetchAttachmentAutomaticallyAfterReceivingInChatroom;
+//@property (nonatomic,assign)    BOOL    fetchAttachmentAutomaticallyAfterReceivingInChatroom;
 
 
 /**
@@ -216,7 +216,7 @@ NS_ASSUME_NONNULL_BEGIN
  * 聊天室消息接收回调最小时间间隔，不设置时，采用默认值
  *  @discusssion SDK采纳的有效设置区间为：50毫秒到500毫秒，如果低于或高于边界值，采用边界值
  */
-@property (nonatomic, assign) NSTimeInterval chatroomMessageReceiveMinInterval;
+//@property (nonatomic, assign) NSTimeInterval chatroomMessageReceiveMinInterval;
 
 /**
  *  NIMSDK优化设置
@@ -234,14 +234,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setupSDKDir:(NSString *)sdkDir;
 
 
-@property (nonatomic,assign)    BOOL    linkQuickSwitch;
+//@property (nonatomic,assign)    BOOL    linkQuickSwitch;
 
 /**
  *  消息索引生成委托
  */
-@property (nullable, nonatomic)    id<NIMMsgIndexProduceDelegate> msgIndexProducer;
+//@property (nullable, nonatomic)    id<NIMMsgIndexProduceDelegate> msgIndexProducer;
 
-@property (nonatomic, assign) NSString * flutterSDKVersion;
+@property (nonatomic, copy) NSString * flutterSDKVersion;
 
 @end
 

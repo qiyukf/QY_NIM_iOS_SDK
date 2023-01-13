@@ -49,20 +49,6 @@
 #import "NIMTeamSearchOption.h"
 
 /**
- *  聊天室相关定义
- */
-#import "NIMChatroom.h"
-#import "NIMChatroomEnterRequest.h"
-#import "NIMMessageChatroomExtension.h"
-#import "NIMChatroomMember.h"
-#import "NIMChatroomMemberRequest.h"
-#import "NIMChatroomTagRequest.h"
-#import "NIMChatroomUpdateRequest.h"
-#import "NIMChatroomQueueRequest.h"
-#import "NIMChatroomBeKickedResult.h"
-#import "NIMChatroomCdnTrackInfo.h"
-
-/**
  *  消息定义
  */
 #import "NIMMessage.h"
@@ -71,7 +57,7 @@
 #import "NIMRevokeMessageNotification.h"
 #import "NIMDeleteMessagesOption.h"
 #import "NIMDeleteMessageOption.h"
-#import "NIMBroadcastMessage.h"
+//#import "NIMBroadcastMessage.h"
 #import "NIMImportedRecentSession.h"
 #import "NIMClearMessagesOption.h"
 #import "NIMDeleteRecentSessionOption.h"
@@ -95,33 +81,25 @@
 /**
  *  文档转码信息
  */
-#import "NIMDocTranscodingInfo.h"
+//#import "NIMDocTranscodingInfo.h"
 
 /**
  *  事件订阅
  */
-#import "NIMSubscribeEvent.h"
-#import "NIMSubscribeRequest.h"
-#import "NIMSubscribeOnlineInfo.h"
-#import "NIMSubscribeResult.h"
+//#import "NIMSubscribeEvent.h"
+//#import "NIMSubscribeRequest.h"
+//#import "NIMSubscribeOnlineInfo.h"
+//#import "NIMSubscribeResult.h"
 
 /**
  *  智能机器人
  */
-#import "NIMRobot.h"
+//#import "NIMRobot.h"
 
 /**
  *  缓存管理
  */
 #import "NIMCacheQuery.h"
-
-/**
- *  通用音视频信令
- */
-#import "NIMSignalingMemberInfo.h"
-#import "NIMSignalingRequest.h"
-#import "NIMSignalingResponse.h"
-
 
 /**
  *  各个对外接口协议定义
@@ -132,21 +110,21 @@
 #import "NIMMediaManagerProtocol.h"
 #import "NIMUserManagerProtocol.h"
 #import "NIMTeamManagerProtocol.h"
-#import "NIMSuperTeamManagerProtocol.h"
+//#import "NIMSuperTeamManagerProtocol.h"
 #import "NIMSystemNotificationManagerProtocol.h"
 #import "NIMApnsManagerProtocol.h"
 #import "NIMResourceManagerProtocol.h"
-#import "NIMChatroomManagerProtocol.h"
-#import "NIMDocTranscodingManagerProtocol.h"
-#import "NIMEventSubscribeManagerProtocol.h"
-#import "NIMRobotManagerProtocol.h"
-#import "NIMRedPacketManagerProtocol.h"
-#import "NIMBroadcastManagerProtocol.h"
-#import "NIMAntispamManagerProtocol.h"
-#import "NIMSignalManagerProtocol.h"
-#import "NIMPassThroughManagerProtocol.h"
-#import "NIMChatExtendManagerProtocol.h"
-#import "NIMIndexManagerProtocol.h"
+//#import "NIMChatroomManagerProtocol.h"
+//#import "NIMDocTranscodingManagerProtocol.h"
+//#import "NIMEventSubscribeManagerProtocol.h"
+//#import "NIMRobotManagerProtocol.h"
+//#import "NIMRedPacketManagerProtocol.h"
+//#import "NIMBroadcastManagerProtocol.h"
+//#import "NIMAntispamManagerProtocol.h"
+//#import "NIMSignalManagerProtocol.h"
+//#import "NIMPassThroughManagerProtocol.h"
+//#import "NIMChatExtendManagerProtocol.h"
+//#import "NIMIndexManagerProtocol.h"
 
 /**
  *  SDK业务类
@@ -167,36 +145,36 @@
 /**
  *  透传代理定义
  */
-#import "NIMPassThroughOption.h"
+//#import "NIMPassThroughOption.h"
 
 
 /**
  *  Thread Talk & 快捷回复
  */
-#import "NIMThreadTalkFetchOption.h"
-#import "NIMChatExtendBasicInfo.h"
-#import "NIMQuickComment.h"
-#import "NIMThreadTalkFetchResult.h"
+//#import "NIMThreadTalkFetchOption.h"
+//#import "NIMChatExtendBasicInfo.h"
+//#import "NIMQuickComment.h"
+//#import "NIMThreadTalkFetchResult.h"
 
 /**
  * 收藏
  */
-#import "NIMCollectInfo.h"
-#import "NIMCollectQueryOptions.h"
-#import "NIMAddCollectParams.h"
+//#import "NIMCollectInfo.h"
+//#import "NIMCollectQueryOptions.h"
+//#import "NIMAddCollectParams.h"
 
 /**
  * 置顶会话
  */
-#import "NIMStickTopSessionInfo.h"
-#import "NIMAddStickTopSessionParams.h"
-#import "NIMSyncStickTopSessionResponse.h"
-#import "NIMLoadRecentSessionsOptions.h"
+//#import "NIMStickTopSessionInfo.h"
+//#import "NIMAddStickTopSessionParams.h"
+//#import "NIMSyncStickTopSessionResponse.h"
+//#import "NIMLoadRecentSessionsOptions.h"
 
 /**
  * PIN
  */
-#import "NIMMessagePinItem.h"
-#import "NIMSyncMessagePinRequest.h"
-#import "NIMSyncMessagePinResponse.h"
+//#import "NIMMessagePinItem.h"
+//#import "NIMSyncMessagePinRequest.h"
+//#import "NIMSyncMessagePinResponse.h"
 

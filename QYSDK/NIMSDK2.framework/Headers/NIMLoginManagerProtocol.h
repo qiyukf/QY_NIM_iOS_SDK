@@ -97,7 +97,7 @@ typedef NS_ENUM(NSInteger, NIMSDKAuthMode)
      *  聊天室单独鉴权
      *  @discussion 调用 NIMChatroomManager 进入聊天室接口时设置 NIMChatroomIndependentMode 即为聊天室单独聊天鉴权模式
      */
-    NIMSDKAuthModeChatroom,
+//    NIMSDKAuthModeChatroom,
 };
 
 /**

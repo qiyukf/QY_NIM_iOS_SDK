@@ -18,18 +18,18 @@
 #import "NIMFileObject.h"
 #import "NIMNotificationObject.h"
 #import "NIMTipObject.h"
-#import "NIMRobotObject.h"
+//#import "NIMRobotObject.h"
 #import "NIMMessageSetting.h"
 #import "NIMMessageReceipt.h"
-#import "NIMRtcCallRecordObject.h"
+//#import "NIMRtcCallRecordObject.h"
 #import "NIMTeamMessageReceiptDetail.h"
-#import "NIMAntiSpamOption.h"
+//#import "NIMAntiSpamOption.h"
 #import "NIMMessageApnsMemberOption.h"
 #import "NIMTeamMessageReceipt.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class NIMMessageChatroomExtension;
+//@class NIMMessageChatroomExtension;
 
 /**
  *  消息送达状态枚举
@@ -139,7 +139,7 @@ typedef NS_ENUM(NSInteger, NIMMessageStatus) {
 /**
  *  消息反垃圾配置
  */
-@property (nullable,nonatomic,strong)                NIMAntiSpamOption *antiSpamOption;
+//@property (nullable,nonatomic,strong)                NIMAntiSpamOption *antiSpamOption;
 
 
 /**

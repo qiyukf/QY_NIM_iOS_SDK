@@ -10,7 +10,7 @@
 #import "NIMSession.h"
 #import "NIMUser.h"
 #import "NIMCustomSystemNotificationSetting.h"
-#import "NIMAntiSpamOption.h"
+//#import "NIMAntiSpamOption.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,19 +43,19 @@ typedef NS_ENUM(NSInteger, NIMSystemNotificationType){
     /**
      *  申请入超大群
      */
-    NIMSystemNotificationTypeSuperTeamApply         = 15,
+//    NIMSystemNotificationTypeSuperTeamApply         = 15,
     /**
      *  拒绝入超大群
      */
-    NIMSystemNotificationTypeSuperTeamApplyReject   = 16,
+//    NIMSystemNotificationTypeSuperTeamApplyReject   = 16,
     /**
      *  邀请入超大群
      */
-    NIMSystemNotificationTypeSuperTeamInvite        = 17,
+//    NIMSystemNotificationTypeSuperTeamInvite        = 17,
     /**
      *  拒绝入超大群邀请
      */
-    NIMSystemNotificationTypeSuperTeamIviteReject   = 18,
+//    NIMSystemNotificationTypeSuperTeamIviteReject   = 18,
     
 };
 
@@ -219,7 +219,7 @@ typedef NS_ENUM(NSInteger, NIMSystemNotificationType){
 /**
  *  反垃圾选项
  */
-@property (nullable,nonatomic,strong)                NIMAntiSpamOption *antiSpamOption;
+//@property (nullable,nonatomic,strong)                NIMAntiSpamOption *antiSpamOption;
 
 /**
 *  环境变量，用于指向不同的抄送、第三方回调等配置

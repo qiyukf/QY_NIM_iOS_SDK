@@ -102,7 +102,7 @@ typedef NS_ENUM(NSInteger, NIMRevokeMessageNotificationType) {
 /**
  * 扩展,服务器填充消息
  */
-@property (nonatomic, nonatomic, copy, readonly) NSString *callbackExt;
+@property (nonatomic, copy, readonly) NSString *callbackExt;
 
 @end
 
