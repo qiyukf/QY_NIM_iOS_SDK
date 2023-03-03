@@ -53,11 +53,11 @@ typedef NS_ENUM(NSInteger, NIMMessageType){
     /**
      *  机器人类型消息
      */
-//    NIMMessageTypeRobot         = 11,
+    NIMMessageTypeRobot         = 11,
     /**
      *  Rtc通话单
      */
-//    NIMMessageTypeRtcCallRecord = 12,
+    NIMMessageTypeRtcCallRecord = 12,
     /**
      *  自定义类型消息
      */
@@ -166,7 +166,7 @@ typedef NS_ENUM(NSInteger, NIMLocalErrorCode) {
     /**
      *  独立模式下获取聊天室服务器地址失败
      */
-//    NIMLocalErrorCodeRequestChatroomAddressesFailed= 17,
+    NIMLocalErrorCodeRequestChatroomAddressesFailed= 17,
     
     /**
      *  群已读回执功能未开启，请使用 NIMSDKConfig 进行开启
@@ -198,6 +198,24 @@ typedef NS_ENUM(NSInteger, NIMLocalErrorCode) {
      *  功能不支持
      */
     NIMLocalErrorCodeNotSupported = 24,
+
+    /**
+     *  未知问题
+     */
+    NIMLocalErrorCodeUnknownError = 25,
+
+    /**
+     *  保存文件失败
+     */
+    NIMLocalErrorCodeSaveFileError = 26,
+    /**
+     *  接口调用过于频繁
+     */
+    NIMLocalErrorCodeFrequentCallError = 27,
+    /**
+     *   和设置冲突
+     */
+    NIMLocalErrorCodeSettingConflictError = 28,
 };
 
 
@@ -346,19 +364,19 @@ typedef NS_ENUM(NSInteger, NIMRemoteErrorCode) {
     /**
      *  聊天室状态异常
      */
-//    NIMRemoteErrorCodeInvalidChatroom     = 13002,
+    NIMRemoteErrorCodeInvalidChatroom     = 13002,
     /**
      *  账号在黑名单中,不允许进入聊天室
      */
-//    NIMRemoteErrorCodeInChatroomBlackList = 13003,
+    NIMRemoteErrorCodeInChatroomBlackList = 13003,
     /**
      *  在禁言列表中,不允许发言
      */
-//    NIMRemoteErrorCodeInChatroomMuteList  = 13004,
+    NIMRemoteErrorCodeInChatroomMuteList  = 13004,
     /**
      *  聊天室处于整体禁言状态,只有管理员能发言
      */
-//    NIMRemoteErrorCodeInChatroomAllMute   = 13006,
+    NIMRemoteErrorCodeInChatroomAllMute   = 13006,
     /**
      *  通用音视频协议：对方云信不在线
      */

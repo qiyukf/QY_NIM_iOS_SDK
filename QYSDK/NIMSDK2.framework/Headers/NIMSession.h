@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, NIMSessionType){
     /**
      *  聊天室
      */
-//    NIMSessionTypeChatroom = 2,
+    NIMSessionTypeChatroom = 2,
     /**
      *  云商服
      */
@@ -33,7 +33,7 @@ typedef NS_ENUM(NSInteger, NIMSessionType){
     /**
      *  超大群
      */
-//    NIMSessionTypeSuperTeam = 5,
+    NIMSessionTypeSuperTeam = 5,
 };
 
 

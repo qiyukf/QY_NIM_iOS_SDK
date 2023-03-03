@@ -18,18 +18,18 @@
 #import "NIMFileObject.h"
 #import "NIMNotificationObject.h"
 #import "NIMTipObject.h"
-//#import "NIMRobotObject.h"
+#import "NIMRobotObject.h"
 #import "NIMMessageSetting.h"
 #import "NIMMessageReceipt.h"
-//#import "NIMRtcCallRecordObject.h"
+#import "NIMRtcCallRecordObject.h"
 #import "NIMTeamMessageReceiptDetail.h"
-//#import "NIMAntiSpamOption.h"
+#import "NIMAntiSpamOption.h"
 #import "NIMMessageApnsMemberOption.h"
 #import "NIMTeamMessageReceipt.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-//@class NIMMessageChatroomExtension;
+@class NIMMessageChatroomExtension;
 
 /**
  *  消息送达状态枚举
@@ -139,7 +139,7 @@ typedef NS_ENUM(NSInteger, NIMMessageStatus) {
 /**
  *  消息反垃圾配置
  */
-//@property (nullable,nonatomic,strong)                NIMAntiSpamOption *antiSpamOption;
+@property (nullable,nonatomic,strong)                NIMAntiSpamOption *antiSpamOption;
 
 
 /**
@@ -199,6 +199,16 @@ typedef NS_ENUM(NSInteger, NIMMessageStatus) {
  * 易盾反垃圾返回的结果字段
  */
 @property (nullable,nonatomic,copy) NSString *yidunAntiSpamRes;
+
+/**
+ * 消息接受者列表，仅用于聊天室
+ */
+@property (nonatomic, copy) NSArray<NSString *> *toAccIds;
+
+/**
+ * 高优消息是否需要ack，默认为NO
+ */
+@property (nonatomic, assign) BOOL needHighPriorityMsgAck;
 
 /**
 *  消息的目标标签表达式

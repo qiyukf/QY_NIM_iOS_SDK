@@ -191,7 +191,7 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
 /**
  *  超大群，负责超大群的相关操作
  */
-//@property (nonatomic,strong,readonly) id<NIMSuperTeamManager> superTeamManager;
+@property (nonatomic,strong,readonly) id<NIMSuperTeamManager> superTeamManager;
 
 /**
  *  好友管理类
@@ -214,55 +214,60 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
 @property (nonatomic,strong,readonly)   id<NIMResourceManager> resourceManager;
 
 /**
+ *  聊天室管理类
+ */
+@property (nonatomic,strong,readonly)   id<NIMChatroomManager> chatroomManager;
+
+/**
  *  文档转码管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMDocTranscodingManager> docTranscodingManager;
+@property (nonatomic,strong,readonly)   id<NIMDocTranscodingManager> docTranscodingManager;
 
 /**
  *  事件订阅管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMEventSubscribeManager> subscribeManager;
+@property (nonatomic,strong,readonly)   id<NIMEventSubscribeManager> subscribeManager;
 
 /**
  *  智能机器人管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMRobotManager> robotManager;
+@property (nonatomic,strong,readonly)   id<NIMRobotManager> robotManager;
 
 /**
  *  红包管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMRedPacketManager> redPacketManager;
+@property (nonatomic,strong,readonly)   id<NIMRedPacketManager> redPacketManager;
 
 /**
  *  广播消息管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMBroadcastManager> broadcastManager;
+@property (nonatomic,strong,readonly)   id<NIMBroadcastManager> broadcastManager;
 
 /**
  *  反垃圾管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMAntispamManager> antispamManager;
+@property (nonatomic,strong,readonly)   id<NIMAntispamManager> antispamManager;
 
 /**
  *  通用音视频信令管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMSignalManager> signalManager;
+@property (nonatomic,strong,readonly)   id<NIMSignalManager> signalManager;
 
 /**
  *   透传代理管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMPassThroughManager> passThroughManager;
+@property (nonatomic,strong,readonly)   id<NIMPassThroughManager> passThroughManager;
 
 
 /**
  *   Thread Talk管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMChatExtendManager> chatExtendManager;
+@property (nonatomic,strong,readonly)   id<NIMChatExtendManager> chatExtendManager;
 
 /**
  *   索引管理类
  */
-//@property (nonatomic,strong,readonly)   id<NIMIndexManager> indexManager;
+@property (nonatomic,strong,readonly)   id<NIMIndexManager> indexManager;
 
 @end
 

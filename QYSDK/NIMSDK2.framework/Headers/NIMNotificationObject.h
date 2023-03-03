@@ -9,9 +9,9 @@
 #import "NIMMessageObjectProtocol.h"
 #import "NIMTeamNotificationContent.h"
 #import "NIMNetCallNotificationContent.h"
-//#import "NIMChatroomNotificationContent.h"
+#import "NIMChatroomNotificationContent.h"
 #import "NIMUnsupportedNotificationContent.h"
-//#import "NIMSuperTeamNotificationContent.h"
+#import "NIMSuperTeamNotificationContent.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
