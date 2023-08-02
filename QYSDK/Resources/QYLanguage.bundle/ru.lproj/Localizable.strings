@@ -341,3 +341,4 @@
 "QYToastStringEvaluationLimit" = "Количество оценок достигло верхнего предела";
 "QYButtonStringWaitingConnect" = "Соединяем сейчас, подождите, пожалуйста,...";
 "QYToastStringPreCloseSession" = "Для живого агента требуется предварительное расследование. Вы хотите выйти из чата?";
+"QYButtonStringIconAppend" = "supplement";

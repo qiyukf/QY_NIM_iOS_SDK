@@ -341,3 +341,4 @@
 "QYToastStringEvaluationLimit" = "Vous avez atteint le nombre maximum d’évaluations";
 "QYButtonStringWaitingConnect" = "Connexion en cours, veuillez patienter...";
 "QYToastStringPreCloseSession" = "Une pré-enquête est requise pour l'agent en direct. Confirmez-vous pour quitter la conversation ?";
+"QYButtonStringIconAppend" = "supplement";

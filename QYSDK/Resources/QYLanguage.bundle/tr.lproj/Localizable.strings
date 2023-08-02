@@ -341,3 +341,4 @@
 "QYToastStringEvaluationLimit" = "Yorum sayısı maksimuma ulaştı";
 "QYButtonStringWaitingConnect" = "Bağlanıyor, lütfen bekleyin...";
 "QYToastStringPreCloseSession" = "Canlı temsilci için ön sorgulama gereklidir. Oturumdan ayrılmak istediğinize emin misiniz?";
+"QYButtonStringIconAppend" = "supplement";

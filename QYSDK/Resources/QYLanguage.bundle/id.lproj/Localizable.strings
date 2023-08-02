@@ -341,3 +341,4 @@
 "QYToastStringEvaluationLimit" = "Jumlah ulasan sudah mencapai batas";
 "QYButtonStringWaitingConnect" = "Sedang menyambung, silakan tunggu sebentar...";
 "QYToastStringPreCloseSession" = "Pra-pertanyaan diperlukan untuk agen langsung. Yakin keluar dari percakapan ini?";
+"QYButtonStringIconAppend" = "supplement";

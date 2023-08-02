@@ -341,3 +341,4 @@
 "QYToastStringEvaluationLimit" = "Límite de evaluación alcanzado";
 "QYButtonStringWaitingConnect" = "Conectando. Por favor, espera...";
 "QYToastStringPreCloseSession" = "Se requiere una consulta previa para el agente en vivo. ¿Abandonar la conversación?";
+"QYButtonStringIconAppend" = "supplement";
