@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name     = 'QY_NIM_iOS_SDK'
-    s.version  = '9.8.1'
+    s.version  = '9.9.1'
     s.license  = { :"type" => "Copyright",
                    :"text" => " Copyright 2021 Netease \n"}  
     s.summary  = '网易七鱼客服访客端 iOS SDK'
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.framework = 'AVFoundation', 'UIKit', 'SystemConfiguration', 'MobileCoreServices', 'WebKit', 'CoreTelephony', 'CoreText', 'CoreMedia', 'ImageIO', 'CoreMotion', 'AudioToolbox', 'Photos', 'Accelerate'
     s.libraries = 'c++', 'z','sqlite3.0','xml2','resolv'
     s.resources  = ['**/Resources/QYResource.bundle', '**/Resources/QYLanguage.bundle', '**/Resources/QYCustomResource.bundle']
-    s.dependency 'QY_RENAME_NIMSDK', '8.9.123.1'
+    s.dependency 'QY_RENAME_NIMSDK', '8.9.123.2'
     s.requires_arc = true
 
 end
