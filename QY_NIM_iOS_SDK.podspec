@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name     = 'QY_NIM_iOS_SDK'
-    s.version  = '9.11.0'
+    s.version  = '10.2.0'
     s.license  = { :"type" => "Copyright",
                    :"text" => " Copyright 2021 Netease \n"}  
     s.summary  = '网易七鱼客服访客端 iOS SDK'
@@ -23,8 +23,7 @@ Pod::Spec.new do |s|
     		vs.resources  = ['**/Resources/QYResource.bundle', '**/Resources/QYLanguage.bundle', '**/Resources/QYCustomResource.bundle' , '**/Resources/QYVideoResource.bundle']
         vs.vendored_frameworks = ['**/QYSDK_ReName.xcframework','**/QYVideoService_ReName.xcframework']
         vs.dependency 'QY_RENAME_NIMSDK', '8.9.123.2'
-        vs.dependency 'NERtcSDK/RtcBasic', '4.6.20'
-        vs.dependency 'QY_iOS_SDK_Package', '7.11.4'
+        vs.dependency 'QY_iOS_SDK_Package', '7.11.5'
     end
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 x86_64 arm64' }
     s.requires_arc = true
